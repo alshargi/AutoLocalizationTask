@@ -74,7 +74,9 @@ def check_validate(lsttags, sentries):
 
 def CreateTaskFiles(task_path, task_path_temp, task_path_input, SAMPLES_file,DOMAIN_name, LOCAL_name, STYLEL_name, SOURCE_name, MODALITY_name, version, voiceId, SIM):
     ####------------------------------------------ Empty files, folder
- 
+    log_file = []
+    unk = []
+    sample_all = []
     mainfolder = task_path + DOMAIN_name.lower()
     if os.path.exists(mainfolder):
         shutil.rmtree(mainfolder)
