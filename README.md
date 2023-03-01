@@ -1,10 +1,15 @@
 # AutoLocalizationTask
 
+```bash
 pip install git+https://github.com/alshargi/AutoLocalizationTask.git
+```
 
+## Usage
 
+#### Demo of some of the features:
+```python
 
-
+# -*- coding: utf-8 -*-
 from AutoLocalizationTask import CreateTaskFiles
 
 task_path       = "./"
@@ -30,4 +35,6 @@ CreateTaskFiles( task_path, task_path_temp, task_path_input, SAMPLES_file,DOMAIN
                        SOURCE_name, MODALITY_name, 
                        version, voiceId, SIM)
 #######################################################################
+
+```
 
